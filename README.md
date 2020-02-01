@@ -3,6 +3,8 @@ Arduino UNO basic 7 Segment display
 
 TinkerCad Circuit : [link!](https://www.tinkercad.com/things/iIAhQGvAwhP-fantastic-allis/editel?tenant=circuits?sharecode=4hB2AxAZLD706_VaGh0wfAvsJ0_SMmDMlY--lHIjs0M=)
 
+![TinkerCadCircuit](https://imgur.com/download/QRMGRFs/)
+
 ```C++
 //defining Segments Pins
 #define A 2
