@@ -19,14 +19,22 @@ int   four[7] = {0, 1, 1, 0, 0, 1, 1};
 int   five[7] = {1, 0, 1, 1, 0, 1, 1};
 int    six[7] = {1, 0, 1, 1, 1, 1, 1};
 int  seven[7] = {1, 1, 1, 0, 0, 0, 0};
-int  eight[7] = {1, 1, 1, 1, 1, 1, 0};
-int   nine[7] = {1, 1, 1, 0, 0, 1, 1};
+int  eight[7] = {1, 1, 1, 1, 1, 1, 1};
+int   nine[7] = {1, 1, 1, 1, 0, 1, 1};
 
 //Displaying a Selected Number
 int segments(int number[7]) {
   int i;
-  for (i = 0; i < 7; i++) {
+  for (i = 0; i < sizeof(seg); i++) {
     digitalWrite(seg[i], number[i]);
+  }
+}
+
+//Reset the Display
+int reset() {
+  int i;
+  for (i = 0; i < sizeof(seg); i++) {
+    digitalWrite(seg[i], 0);
   }
 }
 
@@ -40,24 +48,34 @@ void setup() {
 
 //Testing the Output
 void loop() {
+  reset();
   segments(zero);
   delay(1000);
+  reset();
   segments(one);
   delay(1000);
+  reset();
   segments(two);
   delay(1000);
+  reset();
   segments(three);
   delay(1000);
+  reset();
   segments(four);
   delay(1000);
+  reset();
   segments(five);
   delay(1000);
+  reset();
   segments(six);
   delay(1000);
+  reset();
   segments(seven);
   delay(1000);
+  reset();
   segments(eight);
   delay(1000);
+  reset();
   segments(nine);
   delay(1000);
 }
