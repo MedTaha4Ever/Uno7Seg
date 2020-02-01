@@ -1,3 +1,4 @@
+//defining Segments Pins
 #define A 2
 #define B 3
 #define C 4
@@ -6,8 +7,10 @@
 #define F 7
 #define G 8
 
+//Declaring segments pins Array
 int    seg[7] = {A, B, C, D, E, F, G};
 
+//Declaring 10 digits (Common Cathode Truth Table) <you can add letters too A,B,C,D,...>
 int   zero[7] = {1, 1, 1, 1, 1, 1, 0};
 int    one[7] = {0, 1, 1, 0, 0, 0, 0};
 int    two[7] = {1, 1, 0, 1, 1, 0, 1};
@@ -19,6 +22,7 @@ int  seven[7] = {1, 1, 1, 0, 0, 0, 0};
 int  eight[7] = {1, 1, 1, 1, 1, 1, 0};
 int   nine[7] = {1, 1, 1, 0, 0, 1, 1};
 
+//Displaying a Selected Number
 int segments(int number[7]) {
   int i;
   for (i = 0; i < 7; i++) {
@@ -26,16 +30,16 @@ int segments(int number[7]) {
   }
 }
 
+//Preparing Pins
 void setup() {
-  // put your setup code here, to run once:
   int i;
   for (i = 0; i < 7; i++) {
     pinMode(seg[i], OUTPUT);
   }
 }
 
+//Testing the Output
 void loop() {
-  // put your main code here, to run repeatedly:
   segments(zero);
   delay(1000);
   segments(one);
