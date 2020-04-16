@@ -3,7 +3,7 @@ Arduino UNO basic 7 Segment display
 
 Notice "I'm using this to teach kids from 7 to 12 y.o" any help is welcome
 
-TinkerCad Circuit : [link!](https://www.tinkercad.com/things/iIAhQGvAwhP-fantastic-allis/editel?tenant=circuits?sharecode=4hB2AxAZLD706_VaGh0wfAvsJ0_SMmDMlY--lHIjs0M=)
+TinkerCad Circuit : [link!](https://www.tinkercad.com/things/iIAhQGvAwhP-7seg/editel?sharecode=atTmDVkMhpoLm70HTT3fh1qEWRknRs9Ycp71InPDSoQ)
 
 ![TinkerCadCircuit](https://imgur.com/download/QRMGRFs/)
 
