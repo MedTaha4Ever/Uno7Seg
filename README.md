@@ -1,3 +1,4 @@
+By [Taha for Multimedia Productions](https://tahaprod.tn)
 # Uno7Seg
 Arduino UNO basic 7 Segment display
 
